@@ -48,7 +48,6 @@ class ArticlesController < ApplicationController
       render 'destroy'
     end
   end
-  
 
   private
     def set_article
