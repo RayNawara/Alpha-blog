@@ -5,8 +5,14 @@
   </div>
 </div>
 <h4 align="center"><%= @user.username %>'s Articles</h4>
-<%= render 'articles/articles', obj: @user.articles %>
+<div align="center">
+  <%= will_paginate @user_articles %>
+</div>
+<%= render 'articles/articles', obj: @user_articles %>
 <hr>
+<div align="center">
+  <%= will_paginate @user_articles %>
+</div>
 <div class="article-actions">
   <%= link_to "Edit this user", edit_user_path(@user), class: "btn btn-xs btn-primary" %>
   <%= link_to "Delete this user", user_path(@user), method: :delete, 
