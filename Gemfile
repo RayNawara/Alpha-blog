@@ -55,6 +55,7 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.6'
   # Adds support for Capybara system testing and selenium driver
