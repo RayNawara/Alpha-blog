@@ -43,9 +43,18 @@ $navbar-default-bg: aqua;
   border-top: 1px solid gray;
   margin-top: 15px;
 }
+.input_checkbox input {
+  width: auto !important;
+}
 .listing {
   list-style: none;
   padding: 0;
+}
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 footer {
   margin-top: 35px;
